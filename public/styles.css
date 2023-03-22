@@ -3,3 +3,13 @@
     background-color: blueviolet;
     color: black;
 }
+
+h1 {
+    background-color: black;
+    color: white;
+    border: none;
+    border-right: 2px solid rgb(255, 0, 255);
+    border-bottom: 2px solid rgb(255, 0, 255);
+    padding: 10px 20px;
+    font-weight: bold;
+}
