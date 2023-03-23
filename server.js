@@ -20,7 +20,7 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 
-app.post('/bananas', (req,res) => {
+app.get('/bananas', (req,res) => {
     try{
         rollbar.info('Bananas have been delivered!')
         giveMeBananas()
