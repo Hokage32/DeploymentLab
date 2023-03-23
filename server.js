@@ -21,7 +21,14 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 app.post('/bananas', (req,res) => {
-    res.stta
+    try{
+        rollbar.info('Bananas have been delivered!')
+        giveMeBananas()
+    }catch (err){
+        rollbar.warning('Bananas have been lost!')
+        console.log(err)
+
+    }
 })
 
 
