@@ -25,7 +25,7 @@ app.post('/bananas', (req,res) => {
         rollbar.info('Bananas have been delivered!')
         giveMeBananas()
     }catch (err){
-        rollbar.warning('Bananas have been lost!')
+        rollbar.error(err)
         console.log(err)
 
     }
